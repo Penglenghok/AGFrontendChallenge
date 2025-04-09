@@ -23,7 +23,7 @@ function Chart({
   useEffect(() => {
     if (!containerRef.current) return;
     const options: uPlot.Options = getChartConfig(
-      "line",
+      chartType,
       containerRef,
       width,
       height
