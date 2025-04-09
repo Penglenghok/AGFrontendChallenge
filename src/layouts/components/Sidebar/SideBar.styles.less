@@ -1,0 +1,37 @@
+@import url("@/styles/default.theme.less");
+
+.custom-sider {
+  background-color: @heading-color;
+
+  .menu-container {
+    position: sticky;
+    top: @padding;
+    .logo-container {
+      display: flex;
+      margin: @padding;
+      align-items: center;
+
+      .img-logo {
+        width: @padding * 3;
+        height: @padding * 3;
+        border-radius: @radius;
+      }
+      .name-logo {
+        color: white;
+        font-size: @font-h3;
+        margin: 0;
+        margin-left: @padding;
+      }
+    }
+
+    .ant-menu {
+      background: none;
+      .ant-menu-item-selected {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+      }
+    }
+  }
+  .ant-layout-sider-trigger {
+    background-color: @heading-color;
+  }
+}

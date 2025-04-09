@@ -1,0 +1,3 @@
+export const LAYOUT_CONSTANT={
+    SIDEBAR_WIDTH: 240,
+}
