@@ -1,7 +1,8 @@
+import { ChartType } from "@/types/common";
 import { RefObject } from "react";
 
 export const getChartConfig = (
-  chartType: "line" | "area",
+  chartType: ChartType,
   ref: RefObject<HTMLDivElement | null>,
   width: number,
   height: number
@@ -18,11 +19,10 @@ export const getChartConfig = (
       {},
       {
         label: "Value",
-        stroke: chartType === "line" ? "#0067b9" : "green",
-        ...(chartType === "area" ? { fill: "rgba(0,255,0,0.3)" } : {}),
+        stroke: "#0067b9",
+        ...(chartType === "area" ? { fill: "rgb(0,103,185,0.3)" } : {}),
       },
     ],
   };
-
   return chartConfig;
 };

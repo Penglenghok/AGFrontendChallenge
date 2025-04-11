@@ -1,12 +1,14 @@
 // UPlotChart.tsx
 import { getChartConfig } from "@/config/chart.config";
-import React, { useEffect, useRef } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import uPlot from "uplot";
 import "uplot/dist/uPlot.min.css";
+import "./Chart.styles.less";
+import { ChartType } from "@/types/common";
 
 export interface ChartProps {
   data: [number[], number[]];
-  chartType: "line" | "area";
+  chartType: ChartType;
   width?: number;
   height?: number;
 }
@@ -47,4 +49,4 @@ function Chart({
   return <div ref={containerRef} style={{ width: "100%", height: height }} />;
 }
 
-export default Chart;
+export default  memo(Chart);

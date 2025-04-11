@@ -1,3 +1,10 @@
+import { Row, Typography } from "antd";
+const { Text } = Typography;
+
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <Row justify={"center"}>
+      <Text>@2025</Text>
+    </Row>
+  );
 }
