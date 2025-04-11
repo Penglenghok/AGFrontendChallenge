@@ -78,7 +78,7 @@ function Producer({
           />
         </Col>
       </Row>
-      <Chart data={chartData} chartType={chartType} width={600} height={300} />
+      <Chart data={chartData} chartType={chartType} />
       <div className="height-separator" />
       <StatsDisplay timeframe={timeframe} stats={stats} />
     </div>

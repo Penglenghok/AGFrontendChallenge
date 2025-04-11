@@ -3,7 +3,7 @@ import "./Header.styles.less";
 
 export default function Header() {
   const location = useLocation();
-  const currentRoute = location.pathname.replace("/", "") || "home";
+  const currentRoute = location.pathname.replace("/", "") || "Charts";
   return (
     <div className={"layout-header"}>
       <div>

@@ -178,4 +178,4 @@ npm  run  dev
 
 ## Conclusion
 
-This documentation outlines the structure, functionalities, and key technologies used in the Time Series Data Visualization project. It is designed for scalability, ease of use, and maintainability, offering a robust interface for analyzing time series data.
+This documentation outlines the structure, functionalities, and key technologies used in the Time Series Data Visualization project. It is designed for scalability, ease of use, and maintainability.

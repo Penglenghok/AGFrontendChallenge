@@ -9,7 +9,7 @@ function HomePage() {
     <div>
       <Row gutter={[16, 16]}>
         {chartData.map((data: IProducer) => (
-          <Col span={8} key={data.producerId}>
+          <Col xl={8} lg={12} md={12} sm={24} key={data.producerId}>
             <Producer producerId={data.producerId} />
           </Col>
         ))}
